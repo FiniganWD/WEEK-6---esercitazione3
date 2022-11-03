@@ -1,0 +1,13 @@
+@mixin fun_link ($link:white){
+    color: $link;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+};
+@mixin fun_button ($button: $btn-color) {
+    color:white;
+    background-color: $button;
+    border: 3px outset white;
+    padding: 10px;
+
+}

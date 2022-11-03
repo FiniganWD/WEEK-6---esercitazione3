@@ -1,0 +1,55 @@
+@import 'partial/variable';
+@import 'partial/function';
+@import 'partial/mixin';
+
+// @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap";
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    @include fun_button;
+}
+
+
+#header{
+    background-color: $bg-navbar;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px $btn-color;
+}
+#main-menu ul li{
+    list-style: none;
+    display:inline-flex;
+}
+#main-menu a{
+    color: map-get($text-color, 'bianco');
+    text-decoration: none;
+    padding: 30px 10px;
+    font-style: $oblique-text;
+    font-size: $font-size;
+}
+#main a{
+    @include fun_link ($link: $link-color-main);
+}
+
+#main{
+    display:flex;
+    width: 1100px;
+    margin:0 auto;
+}
+#content{
+    width: 70%;
+}
+#sidebar{
+    width: 30%;
+}
+#sidebar ul{
+    list-style: none;
+
+}
+#sidebar li{
+    border-bottom: 2px dotted #666;
+    padding: 10px
+}
+
+

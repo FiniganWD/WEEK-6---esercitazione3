@@ -1,0 +1,3 @@
+@function fontz( $pixel, $content:18px){
+    @return($pixel / $content) * em;
+}
